@@ -138,6 +138,10 @@ The report includes:
 
 ![Latency](latency.png)
 
+### Retrieval Quality Visualization
+
+![Retrieval Quality](retrieval_quality.png)
+
 
 ## Notes on Cost
 All evaluated models show $0.00 cost during this benchmark because:
@@ -154,6 +158,7 @@ In production environments, infrastructure or API usage costs would apply and sh
 ## Conclusion
 This project describes complete end-to-end benchmarking of text embedding models, Practical evaluation of retrieval quality and latency, Clear trade-off analysis for production decision making.
 The benchmark is designed to be ***transparent, extensible, and production-oriented***.
+
 
 
 
