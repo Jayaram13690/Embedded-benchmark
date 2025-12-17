@@ -1,5 +1,8 @@
 # Text Embedding Model Benchmark
 
+## Dataset Description
+This benchmark uses an AI-generated synthetic dataset consisting of 100 technical paragraphs and 100 corresponding questions. Each question is mapped to a known relevant document, enabling controlled and reproducible evaluation of retrieval performance.
+
 ## TL;DR
 - Fastest model: MiniLM
 - Best retrieval quality: BGE-Large
@@ -10,19 +13,27 @@
 
 | Model | Recall@1 | Recall@5 | Recall@10 | NDCG@10 |
 |------|----------|----------|-----------|---------|
-| MiniLM | 1.00 | 1.00 | 1.00 | 1.00 |
-| BGE-Base | 1.00 | 1.00 | 1.00 | 1.00 |
-| BGE-Large | 1.00 | 1.00 | 1.00 | 1.00 |
-| Gemini | 1.00 | 1.00 | 1.00 | 1.00 |
+| MiniLM | 0.10 | 0.50 | 0.84 | 0.41 |
+| BGE-Base | 0.10 | 0.50 | 0.84 | 0.41 |
+| BGE-Large | 0.10 | 0.50 | 0.84 | 0.41 |
+| Gemini | 0.10 | 0.50 | 0.84 | 0.41 |
+
+### Retrieval Quality Visualization
+
+![Retrieval Quality](retrieval_quality.png)
 
 ## Latency Benchmark (ms)
 
 | Model | Mean | P95 | P99 |
 |------|------|-----|-----|
-| MiniLM | 13.62 | 22.15 | 23.44 |
-| BGE-Base | 83.74 | 88.55 | 89.36 |
-| BGE-Large | 333.53 | 393.04 | 396.73 |
-| Gemini | 1108.62 | 1211.85 | 1235.70 |
+| MiniLM | 452.54 | 471.22 | 472.39 |
+| BGE-Base | 3984.10 | 4502.39 | 4504.92 |
+| BGE-Large | 14665.42 | 15159.83 | 15161.74 |
+| Gemini | 27170.48 | 32115.26 | 32899.31 |
+
+### Latency Visualization
+
+![Latency](latency.png)
 
 ## Cost Analysis
 
@@ -34,16 +45,16 @@
 | Gemini | $0.00 | Free tier Gemini API (rate-limited) |
 
 ## Decision Matrix
-- Choose **MiniLM** for low latency systems
-- Choose **BGE-Base** for balanced production use
-- Choose **BGE-Large** for best semantic accuracy
-- Choose **Gemini** if API-based embeddings are required
+- Choose **MiniLM** for low-latency, high-throughput systems
+- Choose **BGE-Base** for balanced quality and performance
+- Choose **BGE-Large** for maximum retrieval accuracy
+- Choose **Gemini** for API-based embeddings without infrastructure
 
 ## Reproducibility
 
-bash
+```bash
 python -m venv venv
 venv\Scripts\activate
 pip install -r requirements.txt
 python run_benchmarks.py
-
+```
