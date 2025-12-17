@@ -1,0 +1,32 @@
+dataset:
+  documents:
+    - "Machine learning enables systems to learn from data."
+    - "Deep learning is a subset of machine learning."
+    - "Transformers are widely used in NLP."
+    - "Python is commonly used for AI development."
+    - "Embeddings map text to numerical vectors."
+
+  queries:
+    - query: "What is deep learning?"
+      relevant_docs: [1]
+    - query: "What are embeddings?"
+      relevant_docs: [4]
+    - query: "Which language is used for AI?"
+      relevant_docs: [3]
+
+models:
+  - name: MiniLM
+    type: local
+    model_id: sentence-transformers/all-MiniLM-L6-v2
+
+  - name: BGE-Base
+    type: local
+    model_id: BAAI/bge-base-en-v1.5
+
+  - name: BGE-Large
+    type: local
+    model_id: BAAI/bge-large-en-v1.5
+  
+  - name: Gemini
+    type: api
+    model_id: text-embedding-004
