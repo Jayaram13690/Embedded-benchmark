@@ -13,10 +13,10 @@ This benchmark uses an AI-generated synthetic dataset consisting of 100 technica
 
 | Model | Recall@1 | Recall@5 | Recall@10 | NDCG@10 |
 |------|----------|----------|-----------|---------|
-| MiniLM | 0.10 | 0.50 | 0.88 | 0.42 |
-| BGE-Base | 0.10 | 0.50 | 0.88 | 0.42 |
-| BGE-Large | 0.10 | 0.50 | 0.88 | 0.42 |
-| Gemini | 0.10 | 0.50 | 0.88 | 0.42 |
+| MiniLM | 0.10 | 0.49 | 0.84 | 0.40 |
+| BGE-Base | 0.10 | 0.49 | 0.84 | 0.40 |
+| BGE-Large | 0.10 | 0.49 | 0.84 | 0.40 |
+| Gemini | 0.10 | 0.49 | 0.84 | 0.40 |
 
 ### Retrieval Quality Visualization
 
@@ -28,10 +28,10 @@ This benchmark uses an AI-generated synthetic dataset consisting of 100 technica
 
 | Model | Mean | P95 | P99 |
 |------|------|-----|-----|
-| MiniLM | 472.50 | 491.71 | 493.45 |
-| BGE-Base | 3266.58 | 3519.15 | 3549.81 |
-| BGE-Large | 13518.19 | 16167.38 | 16470.82 |
-| Gemini | 27957.55 | 37755.17 | 39986.12 |
+| MiniLM | 509.35 | 642.18 | 666.13 |
+| BGE-Base | 4068.72 | 4926.18 | 5082.57 |
+| BGE-Large | 12644.99 | 14582.92 | 14888.27 |
+| Gemini | 25043.83 | 31603.65 | 31777.59 |
 
 ### Latency Visualization
 
