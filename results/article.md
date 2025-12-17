@@ -1,7 +1,7 @@
 # Text Embedding Model Benchmark
 
 ## Dataset Description
-This benchmark uses an AI-generated synthetic dataset consisting of 100 technical paragraphs and 100 corresponding questions. Each question is mapped to a known relevant document, enabling controlled and reproducible evaluation of retrieval performance.
+This benchmark uses an AI-generated synthetic dataset consisting of 100 technical paragraphs and 100 corresponding questions. Each query maps to a known relevant document, enabling controlled and reproducible evaluation.
 
 ## TL;DR
 - Fastest model: MiniLM
@@ -13,27 +13,31 @@ This benchmark uses an AI-generated synthetic dataset consisting of 100 technica
 
 | Model | Recall@1 | Recall@5 | Recall@10 | NDCG@10 |
 |------|----------|----------|-----------|---------|
-| MiniLM | 0.10 | 0.50 | 0.84 | 0.41 |
-| BGE-Base | 0.10 | 0.50 | 0.84 | 0.41 |
-| BGE-Large | 0.10 | 0.50 | 0.84 | 0.41 |
-| Gemini | 0.10 | 0.50 | 0.84 | 0.41 |
+| MiniLM | 0.10 | 0.50 | 0.88 | 0.42 |
+| BGE-Base | 0.10 | 0.50 | 0.88 | 0.42 |
+| BGE-Large | 0.10 | 0.50 | 0.88 | 0.42 |
+| Gemini | 0.10 | 0.50 | 0.88 | 0.42 |
 
 ### Retrieval Quality Visualization
 
 ![Retrieval Quality](retrieval_quality.png)
 
+![Recall@K](recall_at_k.png)
+
 ## Latency Benchmark (ms)
 
 | Model | Mean | P95 | P99 |
 |------|------|-----|-----|
-| MiniLM | 452.54 | 471.22 | 472.39 |
-| BGE-Base | 3984.10 | 4502.39 | 4504.92 |
-| BGE-Large | 14665.42 | 15159.83 | 15161.74 |
-| Gemini | 27170.48 | 32115.26 | 32899.31 |
+| MiniLM | 472.50 | 491.71 | 493.45 |
+| BGE-Base | 3266.58 | 3519.15 | 3549.81 |
+| BGE-Large | 13518.19 | 16167.38 | 16470.82 |
+| Gemini | 27957.55 | 37755.17 | 39986.12 |
 
 ### Latency Visualization
 
 ![Latency](latency.png)
+
+![Quality vs Latency](quality_vs_latency.png)
 
 ## Cost Analysis
 
