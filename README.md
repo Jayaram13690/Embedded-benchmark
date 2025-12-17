@@ -103,7 +103,7 @@ This dataset simulates a **knowledge-base retrieval scenario** and enables contr
 ## How to Run
 
 ### 1. Create Virtual Environment
-```bash```
+bash
 ```python -m venv venv```
 ```venv\Scripts\activate```
 ```pip install -r requirements.txt```
@@ -149,6 +149,7 @@ In production environments, infrastructure or API usage costs would apply and sh
 ## Conclusion
 This project describes complete end-to-end benchmarking of text embedding models, Practical evaluation of retrieval quality and latency, Clear trade-off analysis for production decision making.
 The benchmark is designed to be ***transparent, extensible, and production-oriented***.
+
 
 
 
