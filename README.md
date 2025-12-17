@@ -73,6 +73,7 @@ This dataset simulates a **knowledge-base retrieval scenario** and enables contr
 > (e.g., MS MARCO, NFCorpus) without changing evaluation logic.
 
 ## Project Structure
+```
 ├── benchmarks/
 │ ├── retrieval_quality.py # Recall & NDCG metrics
 │ ├── latency.py           # Latency measurement
@@ -87,6 +88,7 @@ This dataset simulates a **knowledge-base retrieval scenario** and enables contr
 │ ├── retrieval_quality.png # Retrieval quality visualization
 │ └── latency.png           # Latency comparison visualization
 └── README.md
+```
 
 ## Workflow
 
@@ -147,5 +149,6 @@ In production environments, infrastructure or API usage costs would apply and sh
 ## Conclusion
 This project describes complete end-to-end benchmarking of text embedding models, Practical evaluation of retrieval quality and latency, Clear trade-off analysis for production decision making.
 The benchmark is designed to be ***transparent, extensible, and production-oriented***.
+
 
 
