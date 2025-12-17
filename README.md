@@ -148,3 +148,4 @@ In production environments, infrastructure or API usage costs would apply and sh
 This project describes complete end-to-end benchmarking of text embedding models, Practical evaluation of retrieval quality and latency, Clear trade-off analysis for production decision making.
 The benchmark is designed to be ***transparent, extensible, and production-oriented***.
 
+
