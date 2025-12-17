@@ -136,11 +136,11 @@ The report includes:
 
 ### Latency Visualization
 
-![Latency](latency.png)
+![Latency](/results/latency.png)
 
 ### Retrieval Quality Visualization
 
-![Retrieval Quality](retrieval_quality.png)
+![Retrieval Quality](/results/retrieval_quality.png)
 
 
 ## Notes on Cost
@@ -158,6 +158,7 @@ In production environments, infrastructure or API usage costs would apply and sh
 ## Conclusion
 This project describes complete end-to-end benchmarking of text embedding models, Practical evaluation of retrieval quality and latency, Clear trade-off analysis for production decision making.
 The benchmark is designed to be ***transparent, extensible, and production-oriented***.
+
 
 
 
