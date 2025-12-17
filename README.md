@@ -134,6 +134,11 @@ The report includes:
 | API-only solution             | Gemini            |
 
 
+### Latency Visualization
+
+![Latency](latency.png)
+
+
 ## Notes on Cost
 All evaluated models show $0.00 cost during this benchmark because:
 - Local models are open-source and self-hosted
@@ -149,6 +154,7 @@ In production environments, infrastructure or API usage costs would apply and sh
 ## Conclusion
 This project describes complete end-to-end benchmarking of text embedding models, Practical evaluation of retrieval quality and latency, Clear trade-off analysis for production decision making.
 The benchmark is designed to be ***transparent, extensible, and production-oriented***.
+
 
 
 
